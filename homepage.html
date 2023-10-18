@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HOME</title>
+    
+  <link rel="stylesheet" href="homepage.css">
+  </head>
+  <header>
+    <div class="header">
+      <div class="wrapper">
+      <img src="84925719_2949046438449257_5879346762598055936_n.jpg" alt="logo">
+      <a href="#default" class="logo">Island Sanctuary <br> Wildlife Reserve</a>
+      </div>
+      <div class="header-right">
+        <a class="active" href="homepage.html">HOME</a>
+        <a href="DOGS.html">DOGS</a>
+        <a href="CATS.html">CATS</a>
+        <a href="SUPPORT.html">SUPPORT</a>
+        <a href="ABOUT.html">ABOUT</a>
+        <a href="iswr.html">LOG OUT</a>
+      </div>
+    </div>
+  </header>
+  
+  <body>
+    <div class="container">
+      <img class="image" src="hajhsjashj.jpg" alt="header" style="width:100%; height: 60%; position:relative;">
+        <img class="mySlides" src="1.jpg" style="width:20%; position:relative;">
+        <img class="mySlides" src="3.jpg" style="width:20%; position:relative;">
+        <img class="mySlides" src="naur.jpg" style="width:20%; position:relative;">
+        <img class="mySlides" src="4.jpg" style="width:20%; position:relative;">
+      <div class="top-left">
+        <h1>ADOPT</h1>
+        <p class="heading">Be a hero today! We have dogs and cats <br> available for adoption </p>
+        <a href="ADOPT.html" class="button">ADOPT</a>
+      </div>
+    </div>
+
+    
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
+      }
+      </script>
+      
+
+ <div class="footer-clean">
+      <footer>
+          <div class="container">
+                  <div class="col-sm-4 col-md-3 item">
+                    <h2>Island Santuary<br> Wildlife Reserve</h2>
+                      <ul>
+                        <li><h3>Explore</h3></li>
+                        <li><h3>Legal</h3></li>
+                        <li><h3>Follow</h3></li>
+                      </ul>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Instagram</a></li>
+                          <li><a href="#">Facebook</a></li>
+                      </ul>
+                  </div>
+                      <p class="copyright">© 2021 Island Sanctuary Wildlife Reserve. All rights reserved.</p>
+                  </div>
+              </div>
+      </footer>
+  </body>
+</html>
+  
